@@ -1,4 +1,4 @@
-require('dotenv').config(); // This should be at the very top
+require('dotenv').config(); // This should be at the very top test
 
 const axios = require('axios');
 
