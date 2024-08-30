@@ -1,5 +1,6 @@
+require('dotenv').config(); // Load environment variables from .env
+
 const axios = require('axios');
-require('dotenv').config(); // Add this line to load the .env file
 
 const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID;
