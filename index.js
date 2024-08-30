@@ -1,4 +1,4 @@
-require('dotenv').config(); // Load environment variables from .env
+require('dotenv').config(); // This should be at the very top
 
 const axios = require('axios');
 
@@ -21,5 +21,9 @@ const sendMessageToDiscord = async () => {
         console.error('Error sending message:', error.response ? error.response.data : error.message);
     }
 };
+
+console.log('Bot Token:', DISCORD_BOT_TOKEN);
+console.log('Channel ID:', CHANNEL_ID);
+
 
 sendMessageToDiscord();
